@@ -8,8 +8,9 @@ class SPot
 public:
     SPot(int pin);
     void begin();
-    void yol();
+    void deger();
     void aci();
+    void tur();
 private:
     int _pin;
 };
