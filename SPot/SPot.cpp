@@ -10,6 +10,7 @@ void SPot::begin()
 {
   pinMode(_pin, INPUT);
   int degeri;
+  int acid;
 }
 
 void SPot::deger()
@@ -25,5 +26,10 @@ void SPot::tur()
 
 void SPot::aci()
 {
-  
+  if (deger() == 0) {
+    acid = 0;
+  } else {
+    acid = map(deger(), 0, 1023, 0, 270);
+  }
+  return acid;
 }
